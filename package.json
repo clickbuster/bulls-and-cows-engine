@@ -1,0 +1,26 @@
+{
+  "name": "bulls-and-cows-engine",
+  "version": "1.0.0",
+  "description": "Bulls and cows guessing engine",
+  "main": "index.js",
+  "scripts": {
+    "start": "node proof-of-concept.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/clickbuster/bulls-and-cows-engine.git"
+  },
+  "keywords": [
+    "javascript",
+    "game",
+    "bulls",
+    "cows",
+    "node"
+  ],
+  "author": "Andriyan Ivanov <andriyan.ivanov@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/clickbuster/bulls-and-cows-engine/issues"
+  },
+  "homepage": "https://github.com/clickbuster/bulls-and-cows-engine#readme"
+}
