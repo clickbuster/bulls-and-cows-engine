@@ -54,3 +54,5 @@ A script which plays a solo guessing game, proving the effectiveness of the gues
 ```sh
 npm start
 ```
+
+[MIT](/LICENSE)

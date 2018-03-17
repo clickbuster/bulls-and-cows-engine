@@ -1,4 +1,5 @@
-#!/usr/bin/node
+'use strict';
+
 /**
  * A proof of concept script showing the bot logic
  * that guesses a valid random bulls and cows number
@@ -17,10 +18,10 @@ let set = GameEngine.getDefaultSet();
 
 // Number of attempts at guessing the corrent number
 let attempt = 0;
-let guess, bulls, cows;
+let guess, bulls, cows, score;
 
 console.log('-------------------------------------------------');
-console.log('Secret number to guess: ', secret);
+console.log(`Secret number to guess: ${secret}`);
 console.log('-------------------------------------------------');
 
 while (true) {
@@ -28,7 +29,7 @@ while (true) {
   guess = GameEngine.pickRandom(set);
   attempt++;
 
-  console.log('Attempt', attempt, ':', guess, 'remaining possibilities:', set.length);
+  console.log(`Attempt ${attempt}: ${guess} remaining possibilities: ${set.length}`);
 
   // get the bulls & cows score of the guess versus the secret
   score = GameEngine.compareNumbers(guess, secret);
@@ -36,7 +37,7 @@ while (true) {
   // 4 bulls === win
   if (score.bulls === 4) {
     console.log('-------------------------------------------------');
-    console.log('Number found in', attempt, 'attempts!\n');
+    console.log(`Number found in ${attempt} attempts!\n`);
     break;
   }
 
@@ -46,5 +47,5 @@ while (true) {
   bulls = score.bulls !== 1 ? score.bulls + ' bulls' : 'a bull';
   cows = score.cows !== 1 ? score.cows + ' cows' : 'a cow';
 
-  console.log('Found:', bulls, 'and', cows, '\n');
+  console.log(`Found: ${bulls} and ${cows}\n`);
 }
