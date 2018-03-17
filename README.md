@@ -24,16 +24,16 @@ npm install https://github.com/clickbuster/bulls-and-cows-engine.git
 # API
 How to use the `GameEngine` object
 
-### `GameEngine.isValidNumber(num: string|integer): boolean`
+##### `GameEngine.isValidNumber(num: string|integer): boolean`
 Returns `true` if the provided number is a valid guess (e.g. 4 digits, non-repeated).
 
-### `GameEngine.pickRandom(set?: []): number`
+##### `GameEngine.pickRandom(set?: []): number`
 Returns a random number from a set of available numbers, if no set is provided, a number from the default set of all possible answers is selected.
 
-### `GameEngine.getDefaultSet(): array`
+##### `GameEngine.getDefaultSet(): array`
 Returns a copy of the default set, containing all possible game answers, generated at runtime, containing all 4536 possibilities
 
-### `GameEngine.compareNumbers(a: number, b:number): Score`
+##### `GameEngine.compareNumbers(a: number, b:number): Score`
 Returns a scopre from comparing two numbers, example:
 
 ```javascript
@@ -42,10 +42,10 @@ score.bulls === 2;
 score.cows === 1;
 ```
 
-### `GameEngine.filterSet(set: array = [], guess: number, score: Score): PossibilitySet`
+##### `GameEngine.filterSet(set: array = [], guess: number, score: Score): PossibilitySet`
 Get all possibilites from a set, which have the same amount of bulls and cows as the guess provided
 
-### `GameEngine.filterTurns(set: array, turns: array): PossibilitySet`
+##### `GameEngine.filterTurns(set: array, turns: array): PossibilitySet`
 Applies previously played turns to get the current state of the game state (used when resuming games)
 
 # Proof of concept
