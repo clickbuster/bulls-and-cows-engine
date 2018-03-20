@@ -14,6 +14,18 @@
 * Guess: 4125 - 1 bull and 3 cows
 
 # Usage
+Clone the app and run the proof of concept code or the tests
+
+```sh
+git clone https://github.com/clickbuster/bulls-and-cows-engine.git
+cd bulls-and-cows-engine
+npm install       # only if you don't have mocha globally installed
+npm start         # to execute the proof of concept script
+npm test          # to run the tests
+npm test:dev      # to run the tests in --watch mode
+```
+
+# Usa in an app
 Just include in your npm package by installing from this repo:
 
 ```sh
