@@ -8,7 +8,7 @@
  * from 1023 to 9876
  */
 
-const GameEngine = require('./index');
+const GameEngine = require('./lib/GameEngine');
 
 // Random number to be guessed
 const secret = GameEngine.pickRandom();
