@@ -1,4 +1,5 @@
-# Bulls and Cows game engine
+# Bulls and Cows game engine [![Build Status](https://travis-ci.org/clickbuster/bulls-and-cows-engine.svg?branch=master)](https://travis-ci.org/clickbuster/bulls-and-cows-engine)
+
 **Bulls and Cows** is a popular number guessing game for kids. Rules are pretty simple:
 
 * Two players thinks of a 4 digit number, not preceeded with 0 and with no duplicate digits - 1234 is OK, 1233 and 0123 are not
